@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap');
+
+@theme {
+  --color-med-blue: #004395;
+  --color-med-cyan: #0066CC;
+  --color-med-green: #2E9845;
+  --color-med-lightgreen: #38B000;
+  --color-bg-light: #F4F8FA;
+
+  --font-cairo: "Cairo", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-cairo);
+  background-color: var(--color-bg-light);
+  color: #0F172A;
+  overflow-x: hidden;
+}
+
+.bg-gradient-medlink {
+  background: linear-gradient(135deg, #004395 0%, #0066CC 50%, #2E9845 100%);
+}
+
+.text-gradient-medlink {
+  background: linear-gradient(135deg, #004395 0%, #0066CC 40%, #2E9845 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes softPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.03);
+    opacity: 0.9;
+  }
+}
+
+.animate-soft-pulse {
+  animation: softPulse 3s infinite ease-in-out;
+}
