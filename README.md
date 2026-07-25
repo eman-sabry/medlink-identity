@@ -1,16 +1,69 @@
-# React + Vite
+# 🏥 MedLink Identity
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="public/logo.svg" alt="MedLink Identity Logo" width="120" />
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <b>المنصة السحابية والحلول الذكية المتقدمة لإدارة المنظومات الطبية والعيادات.</b>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p align="center">
+  <a href="#-المميزات-الرئيسية">المميزات</a> •
+  <a href="#-التقنيات-المستخدمة">التقنيات</a> •
+  <a href="#-طرق-التشغيل-والأسعار">خطط الأسعار</a> •
+  <a href="#-بدء-التشغيل">بدء التشغيل</a> •
+  <a href="#-التواصل-والدعم">التواصل</a>
+</p>
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌟 نبذة عن المشروع
 
-## Expanding the ESLint configuration
+**MedLink Identity** هي منصة متكاملة مخصصة للأطباء والعيادات الطبية توفر نظاماً سحابياً مرناً بالإضافة إلى نسخة محلية (Offline) تعمل بدون الحاجة للاتصال بالإنترنت. يهدف النظام إلى تنظيم إدارة المرضى، الحجوزات، العيادات متعددة الفروع، وسجلات الكشف بكل سهولة وبأعلى مستويات الأمان.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ المميزات الرئيسية
+
+- ⚡ **إدارة كاملة للعيادات والمراكز الطبية**: دعم ربط عيادة واحدة أو عدة عيادات في نظام موحد.
+- 🌐 **دعم كامل للغتين (Arabic & English)**: واجهة مستخدم متجاوبة تدعم التغيير السلس بين العربية والإنجليزية.
+- 📶 **دعم التشغيل السحابي والأوفلاين**:
+  - **النسخة السحابية (Cloud):** متابعة وإدارة العيادة من أي مكان عبر الإنترنت.
+  - **النسخة المحلية (Offline):** تعمل بنسبة 100% بدون إنترنت مع قاعدة بيانات محليّة على جهاز العيادة.
+- 🎨 **واجهة مستخدم عصرية ومتجاوبة**: مصممة باستخدام **Tailwind CSS** مع دعم كامل للهواتف والأجهزة اللوحية والشاشات الكبيرة.
+- 🛡️ **أمان واستقلالية البيانات**: حماية بيانات المرضى والعمليات الطبية وفق أعلى معايير الخصوصية.
+
+---
+
+## 🛠️ التقنيات المستخدمة (Tech Stack)
+
+### 🎨 الواجهة الأمامية (Frontend)
+- **React.js** - لبناء مكونات واجهة المستخدم التفاعلية.
+- **Vite** - أداة البناء والتطوير السريعة.
+- **Tailwind CSS** - لتنسيق الواجهات والتصاميم المجهزة للفراموورك.
+- **SVG Icons** - أداء عالي بدون الاعتماد على مكتبات خارجية للأيقونات.
+
+---
+
+## 💳 طرق التشغيل والأسعار
+
+يوفر MedLink خيارات مرنة تناسب جميع أحجام المنظومات الطبية:
+
+| الباقة | السعر | التغطية | نوع التشغيل |
+| :--- | :--- | :--- | :--- |
+| **الباقة الأساسية (Starter)** | 900 ج.م / شهرياً | حتى 10 عيادات | سحابي (Cloud) |
+| **الباقة الاحترافية (Professional)** | 1,600 ج.م / شهرياً | حتى 20 عيادة | سحابي (Cloud) |
+| **باقة المؤسسات (Enterprise)** | 2,500 ج.م / شهرياً | عدد غير محدود | سحابي (Cloud) |
+| **النسخة الأوفلاين (Local)** | **7,000 ج.م (دفعة واحدة مدى الحياة)** | عيادة محليّة | أوفلاين 100% بدون إنترنت |
+
+---
+
+## 🚀 بدء التشغيل والتثبيت المحلي
+
+لمشروع الواجهة الأمامية وتطويره على جهازك الشخصي:
+
+### 1. استنساخ المستودع (Clone)
+```bash
+git clone [https://github.com/your-username/medlink-identity.git](https://github.com/your-username/medlink-identity.git)
+cd medlink-identity
