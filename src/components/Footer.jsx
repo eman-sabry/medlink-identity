@@ -61,9 +61,8 @@ export default function Footer({ t }) {
   const emailAddress = "medlinkidentity@gmail.com";
 
   const socialLinks = {
-    instagram:
-      "https://www.instagram.com/medlinkidentity?igsh=MTd5Zm10MmFkaXNkdg%3D%3D&utm_source=qr",
-    tiktok: "https://www.tiktok.com/@medlinkidentity?_r=1&_t=ZS-98DBXgczQmL",
+    instagram: "https://www.instagram.com/medlink.identity",
+    tiktok: "https://www.tiktok.com/@medlink.identity?_r=1&_t=ZS-98MIatsou16",
     linkedin: "https://www.linkedin.com/in/medlink-identity-991a9a423/",
   };
 
@@ -159,15 +158,12 @@ export default function Footer({ t }) {
           </div>
         </div>
 
-        <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-bold text-slate-500">
+        <div className="pt-8 flex   justify-center items-center gap-4 text-xs font-bold text-slate-500">
           <div>
             © {new Date().getFullYear()} MedLink Identity.{" "}
             {t?.footer?.rights || "جميع الحقوق محفوظة."}
           </div>
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-med-green"></span>
-            <span className="text-slate-400">MedLink Systems Online</span>
-          </div>
+         
         </div>
       </div>
     </footer>

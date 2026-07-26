@@ -1,4 +1,4 @@
-import  { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import {
   Phone,
   Mail,
@@ -14,14 +14,13 @@ import emailjs from "@emailjs/browser";
 export default function Contact({ t }) {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState(null); 
+  const [status, setStatus] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
     setStatus(null);
 
-   
     const SERVICE_ID = "service_rm3tpte";
     const TEMPLATE_ID = "template_ooznfi4";
     const PUBLIC_KEY = "UqKYLkLreg_7udX2x";
@@ -43,7 +42,7 @@ export default function Contact({ t }) {
   const contactCards = [
     {
       icon: <Phone className="w-5 h-5 text-med-blue" />,
-      bg: "bg-blue-50 ",
+      bg: "bg-blue-50",
       label: t.contact.phoneLabel || "الهاتف",
       value: t.contact.phone,
       href: `tel:${t.contact.phone}`,
@@ -67,7 +66,7 @@ export default function Contact({ t }) {
   return (
     <section
       id="contact"
-      className="py-24 bg-white relative overflow-hidden  min-h-screen  flex items-center"
+      className="py-24 bg-white relative overflow-hidden min-h-screen flex items-center"
     >
       <div className="absolute top-0 left-0 w-96 h-96 bg-med-blue/5 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-med-green/5 rounded-full blur-3xl pointer-events-none"></div>
@@ -104,9 +103,13 @@ export default function Contact({ t }) {
                     <span className="text-xs font-extrabold text-slate-400 block mb-0.5">
                       {card.label}
                     </span>
-                    <span className="font-black text-slate-800 text-sm sm:text-base dir-ltr inline-block">
+                   
+                    <bdi
+                      dir="ltr"
+                      className="font-black text-slate-800 text-sm sm:text-base inline-block tracking-wider"
+                    >
                       {card.value}
-                    </span>
+                    </bdi>
                   </div>
                 </a>
               ))}
