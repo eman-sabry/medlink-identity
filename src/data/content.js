@@ -158,10 +158,10 @@ export const content = {
         offlineCard: {
             badge: "دفعة واحدة - بدون اشتراك شهري",
             title: "النسخة الأوفلاين (Local Systems)",
-            originalPrice: "",
+            originalPrice: "10,000",
             price: "7,000",
             period: "جنيه / مدى الحياة",
-            discount: ""    ,
+            discount: " توفير 3,000 ج.م ",
             cta: "طلب النسخة المحلية",
             features: [
                 "ترخيص دائِم ومدى الحياة (بدون أي رسوم شهرية)",
@@ -382,10 +382,10 @@ export const content = {
          offlineCard: {
              badge: "One-Time - No Subscription",
              title: "Offline Version (Local Systems)",
-             originalPrice: "",
+             originalPrice: "10,000",
              price: "7,000",
              period: "EGP / Lifetime",
-             discount: "",
+             discount: "Save 3,000 EGP",
              cta: "Request Local System",
              features: [
                  "Lifetime license (Zero recurring fees)",
