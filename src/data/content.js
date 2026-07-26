@@ -105,6 +105,7 @@ export const content = {
         title: "خطط الأسعار والاشتراكات",
         offerBadge: "خصومات خاصة ومحدودة على كافة الأنظمة البرمجية!",
         currency: "جنيه / شهرياً",
+         originalPriceLabel: "السعر الأصلي",
         commonFeatures: [
             "جميع مميزات المنظومة البرمجية الشاملة",
             "تدريب واستشارات فنية ودعم متواصل"
@@ -158,6 +159,7 @@ export const content = {
         offlineCard: {
             badge: "دفعة واحدة - بدون اشتراك شهري",
             title: "النسخة الأوفلاين (Local Systems)",
+           
             originalPrice: "10,000",
             price: "7,000",
             period: "جنيه / مدى الحياة",
@@ -329,6 +331,7 @@ export const content = {
          title: "Pricing Plans & Subscriptions",
          offerBadge: "Special limited discounts across all software plans!",
          currency: "EGP / Month",
+            originalPriceLabel: "Original Price",
          commonFeatures: [
              "All comprehensive software features included",
              "Continuous onboarding, training & engineering support"
@@ -382,6 +385,7 @@ export const content = {
          offlineCard: {
              badge: "One-Time - No Subscription",
              title: "Offline Version (Local Systems)",
+          
              originalPrice: "10,000",
              price: "7,000",
              period: "EGP / Lifetime",

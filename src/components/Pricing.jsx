@@ -23,11 +23,9 @@ export default function Pricing({ t }) {
       id="pricing"
       className="py-16 sm:py-20 bg-slate-50/50 relative overflow-hidden min-h-screen"
     >
-     
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-med-blue/10 via-med-cyan/10 to-med-green/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-3">
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
             {pricingData?.title}
@@ -40,7 +38,6 @@ export default function Pricing({ t }) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-5 items-stretch">
-        
           {pricingData?.plans?.map((plan, idx) => (
             <div
               key={idx}
@@ -59,7 +56,6 @@ export default function Pricing({ t }) {
               )}
 
               <div>
-              
                 <div className="flex items-center justify-between gap-2 mb-2">
                   <h3
                     className={`text-base font-black ${
@@ -81,7 +77,6 @@ export default function Pricing({ t }) {
                   )}
                 </div>
 
-               
                 <div className="mb-4 pb-4 border-b border-slate-200/20">
                   {plan.originalPrice && (
                     <div className="flex items-center gap-1.5 mb-0.5">
@@ -89,7 +84,7 @@ export default function Pricing({ t }) {
                         {plan.originalPrice}
                       </span>
                       <span className="text-[10px] text-slate-400 font-medium">
-                        السعر الأصلي
+                        {t.pricing.originalPriceLabel}
                       </span>
                     </div>
                   )}
@@ -107,9 +102,7 @@ export default function Pricing({ t }) {
                   </div>
                 </div>
 
-              
                 <ul className="space-y-2.5 mb-6 text-[11px] sm:text-xs font-bold">
-                 
                   {plan.features?.map((feat, fIdx) => (
                     <li key={`pf-${fIdx}`} className="flex items-start gap-2.5">
                       <div
@@ -131,7 +124,6 @@ export default function Pricing({ t }) {
                     </li>
                   ))}
 
-                
                   {plan.clinics && (
                     <li className="flex items-start gap-2.5">
                       <div
@@ -153,7 +145,6 @@ export default function Pricing({ t }) {
                     </li>
                   )}
 
-                 
                   {pricingData?.commonFeatures?.map((feat, fIdx) => (
                     <li key={`cf-${fIdx}`} className="flex items-start gap-2.5">
                       <div
@@ -177,7 +168,6 @@ export default function Pricing({ t }) {
                 </ul>
               </div>
 
-             
               <a
                 href="#contact"
                 className={`w-full py-3 rounded-xl font-black text-center text-xs transition-all duration-300 shadow-sm ${
@@ -191,7 +181,6 @@ export default function Pricing({ t }) {
             </div>
           ))}
 
-          
           <div className="group relative rounded-2xl p-5 sm:p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 bg-gradient-to-b from-amber-500/10 via-white to-amber-500/5 border-2 border-amber-400/60 text-slate-900 shadow-md shadow-amber-500/10 hover:shadow-lg hover:border-amber-400">
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-30">
               <span className="bg-amber-500 text-white text-[10px] sm:text-[11px] font-black px-3.5 py-1 rounded-full uppercase tracking-wider shadow-md shadow-amber-500/20 whitespace-nowrap border border-white/20">
@@ -218,7 +207,7 @@ export default function Pricing({ t }) {
                       {offlineCard?.originalPrice}
                     </span>
                     <span className="text-[10px] text-slate-400 font-medium">
-                      السعر الأصلي
+                      {t.pricing.originalPriceLabel}
                     </span>
                   </div>
                 )}
