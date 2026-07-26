@@ -50,7 +50,7 @@ export default function Pricing({ t }) {
               {plan.popular && (
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-30">
                   <span className="bg-gradient-to-r from-med-green to-emerald-600 text-white text-[10px] sm:text-[11px] font-black px-3.5 py-1 rounded-full uppercase tracking-wider shadow-md shadow-emerald-600/30 whitespace-nowrap border border-white/20">
-                    الأكثر طلباً ⭐
+                    {t.pricing.popularBadge }
                   </span>
                 </div>
               )}

@@ -105,6 +105,7 @@ export const content = {
         title: "خطط الأسعار والاشتراكات",
         offerBadge: "خصومات خاصة ومحدودة على كافة الأنظمة البرمجية!",
         currency: "جنيه / شهرياً",
+        popularBadge: "الأكثر طلباً ⭐",
          originalPriceLabel: "السعر الأصلي",
         commonFeatures: [
             "جميع مميزات المنظومة البرمجية الشاملة",
@@ -332,6 +333,7 @@ export const content = {
          offerBadge: "Special limited discounts across all software plans!",
          currency: "EGP / Month",
             originalPriceLabel: "Original Price",
+            popularBadge: "Most Popular ⭐",
          commonFeatures: [
              "All comprehensive software features included",
              "Continuous onboarding, training & engineering support"
